@@ -42,7 +42,6 @@ return new class extends Migration
     {
         Schema::table('tickets', function (Blueprint $table) {
             $table->dropForeign('tickets_flight_id_foreign');
-//            $table->dropSoftDeletes();//վօռօսհ յամանակ դե պահւմ ե
         });
         Schema::dropIfExists('tickets');
     }

@@ -9,11 +9,7 @@ use Illuminate\Http\Response;
 
 class FlightController extends Controller
 {
-//    public function index()
-//    {
-//        $flights = Flight::all();
-//        return view('flights.index', ['flights' => $flights]);
-//    }
+
     public function getFlight()
     {
         $flights = Flight::with('tickets')->get();
